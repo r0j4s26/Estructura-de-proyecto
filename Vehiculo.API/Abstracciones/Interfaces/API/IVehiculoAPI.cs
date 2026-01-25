@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Abstracciones.Interfaces.API
 {
-    public interface IVehiculoController
+    public interface IVehiculoAPI
     {
         Task<IActionResult> Obtener();
         Task<IActionResult> Obtener(Guid Id);

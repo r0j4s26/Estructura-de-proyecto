@@ -1,7 +1,7 @@
 ﻿-- =============================================
 -- Author:		Sebastián Rojas Vargas
 -- Create date: 1/19/26
--- Description:	Agregar Vehiculo
+-- Description:	Agregar Vehiculo terminado
 -- =============================================
 CREATE PROCEDURE AgregarVehiculo
 	-- Add the parameters for the stored procedure here

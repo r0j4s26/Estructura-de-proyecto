@@ -2,7 +2,7 @@
 using Abstracciones.Interfaces.Servicios;
 using Abstracciones.Modelos.Servicios.Registro;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;       
 
 namespace Servicios
 {
@@ -19,7 +19,7 @@ namespace Servicios
 
         public async Task<Propietario> Obtener(string placa)
         {
-            var endPoint = _configuracion.ObtenerMetodo("APIEndPointsRegistro",
+            var endPoint = _configuracion.ObtenerMetodo("ApiEndPointsRegistro",
                 "ObtenerRegistro");
             var servicioRegistro = _httpClient.CreateClient("ServicioRegistro");
             var respuesta = await servicioRegistro.GetAsync(string.Format

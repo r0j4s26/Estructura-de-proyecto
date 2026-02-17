@@ -18,8 +18,7 @@ namespace Servicios
 
         public async Task<Revision> Obtener(string placa)
         {
-            var endPoint = _configuracion.ObtenerMetodo("APIEndPointsRevision",
-                "ObtenerRevision");
+            var endPoint = _configuracion.ObtenerMetodo("ApiEndPointsRevision", "ObtenerRevision");
             var servicioRegistro = _httpClient.CreateClient("ServicioRevision");
             var respuesta = await servicioRegistro.GetAsync(string.Format
                 (endPoint, placa));
